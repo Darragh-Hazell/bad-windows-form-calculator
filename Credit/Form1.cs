@@ -200,7 +200,14 @@ namespace Credit
 
         public override int execute()
         {
-            return a / b;
+            try
+            {
+                return a / b;
+            }
+            catch
+            {
+                return 0;
+            }
         }
     }
 
